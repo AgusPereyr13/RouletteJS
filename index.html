@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Ruleta</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link href="css/sweetalert.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="./img/ruleta2.png" type="image/x-icon">
+</head>
+
+<body>
+    <p className='by'><a href="https://github.com/AgusPereyr13/" target="_blank" rel="noreferrer">Design by APereyra</a></p>
+    <form id="form1">
+        <h1>RULETA</h1>
+        <main class="gralContainer">
+            <div class="elementContainer ">
+                <div class="elementObject">
+                    <h2 class="elementTitle ">Nombres:</h2>
+                    <textarea id="ListaElementos" rows="13">
+Ejemplo 1
+Ejemplo 2
+Ejemplo 3
+Ejemplo 4
+Ejemplo 5
+</textarea>
+                    <input type="button" onclick="leerElementos()" class="elementButton" value="Generar Ruleta" />
+                    <input id="bigButton" class="elementButton"
+                        onclick="objRuleta.startAnimation(); this.disabled=true;" value="Girar" type="button" />
+                </div>
+            </div>
+
+            <div class="rouletteContainer">
+                <div id="canvasContainer" onclick="objRuleta.startAnimation();bigButton.disabled = true;">
+                    <canvas id="Ruleta" width="700" height="550">
+                        Canvas not supported, use another browser.
+                    </canvas>
+                </div>
+            </div>
+        </main>
+    </form>
+    <script src="js/Winwheel.min.js"></script>
+    <script src="js/TweenMax.min.js"></script>
+    <script src="js/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="./js/roulette.js"></script>
+</body>
+</html>

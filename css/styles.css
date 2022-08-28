@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300;400;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Anek Telugu', sans-serif;
+    background: radial-gradient(circle, rgba(167,168,177,0.8048261540944502) 0%, rgba(0,0,0,1) 100%);
+    margin: 10px 10px 10px 10px;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+}
+
+.gralContainer {
+    display: flex;
+}
+
+.elementObject {
+    display: flex;
+    flex-direction: column;
+}
+
+.elementTitle {
+    color: white;
+}
+
+#ListaElementos {
+    color: white;
+    background-color: rgba(240, 248, 255, 0);
+    border: 2px solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    resize: none;
+}
+
+.elementButton {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    box-shadow: 0px 0px 5px 2px white;
+    cursor: pointer;
+}
+
+.elementButton:hover {
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    font-size: 20px;
+    background-color: transparent;
+    transition: ease-in-out .2s;
+    color: white;
+    border: 2px solid rgb(56, 142, 204);
+    box-shadow: 0px 0px 10px 5px rgb(56, 142, 204);
+    cursor: pointer;
+}
+
+.rouletteContainer {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#canvasContainer {
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100vh;
+    z-index: 9999;
+}
+
+#Ruleta {
+    margin-top: -20px;
+    margin-left: 40px;
+}
+
+.by {
+    font-family: 'Anek Telugu', sans-serif;
+    position: relative;
+    font-size: .5rem;
+    text-align: right;
+    cursor: pointer;
+    text-decoration: none;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation-name: appear;
+    animation-duration: 10s;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-size: .8rem;
+    transition: .3s;
+}
+
+a:hover {
+    color: white;
+}
